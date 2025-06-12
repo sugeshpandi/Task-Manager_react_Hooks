@@ -30,7 +30,6 @@ export default function App() {
   }, [task]);
 
   return (
-<<<<<<< HEAD
     <div className=' border-2 p-5 bg-gray-50'>
     <TaskContext.Provider value={{ task, dispatch }}>
       <h1 className=' p-1 font-semibold text-2xl text-center border-2 text-gray-800 bg-linear-65 from-blue-100 to-green-100'>My Collaborative Task Board</h1>
@@ -38,12 +37,4 @@ export default function App() {
       <Taskboard />
     </TaskContext.Provider>
     </div>
-=======
-    <TaskContext.Provider value={{ task, dispatch }}>
-      <h1>My Collaborative Task Board</h1>
-      <AddTask />
-      <Taskboard />
-    </TaskContext.Provider>
->>>>>>> 5784bb0453f538962d40187beb3929b8f19971b1
-  );
-}
+  )}
